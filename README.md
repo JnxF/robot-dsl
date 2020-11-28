@@ -6,6 +6,7 @@
 
 # robot-dsl
 ![textX pipeline](https://github.com/JnxF/robot-dsl/workflows/textX%20pipeline/badge.svg)
+![Hits](https://visitor-badge.glitch.me/badge?page_id=jnxf.robot-dsl)
 [![GitHub stars](https://img.shields.io/github/stars/JnxF/robot-dsl.svg)](https://GitHub.com/JnxF/robot-dsl/stargazers/)
 [![GitHub forks](https://img.shields.io/github/forks/JnxF/robot-dsl.svg)](https://GitHub.com/JnxF/robot-dsl/network/)
 [![GitHub repo size in bytes](https://img.shields.io/github/repo-size/JnxF/robot-dsl.svg)](https://github.com/JnxF/robot-dsl)

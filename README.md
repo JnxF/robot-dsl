@@ -1,3 +1,9 @@
+<br>
+<p align="center">
+<img src="cover.png" width=50%>
+</p>
+<br>
+
 # robot-dsl
 ![textX pipeline](https://github.com/JnxF/robot-dsl/workflows/textX%20pipeline/badge.svg)
 [![GitHub stars](https://img.shields.io/github/stars/JnxF/robot-dsl.svg)](https://GitHub.com/JnxF/robot-dsl/stargazers/)

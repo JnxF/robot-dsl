@@ -1,0 +1,59 @@
+Mode:
+	'->'? name=ID '{' mode*=GenericMode '}' ('->' next=[Mode])?
+;
+
+GenericMode:
+	Action | Reaction | Mode
+;
+
+Reaction:
+	'on' event=Event '->' next=[Mode]
+;
+
+Action:
+	actionType=ActionType ('for' duration=AExpr 's' | 'at' 'speed' speed=AExpr)?
+;
+
+ActionType :
+	AcDock | AcMove | AcTurn
+;
+
+AcDock:
+	'return' 'to' 'base'
+;
+
+AcTurn:
+	'turn' (direction='right' | direction='left')? ('by' degrees=AExpr)?
+;
+
+AcMove:
+	'move' (direction='forward' | direction='backward')
+;
+
+AExpr:
+	MinusMultExpr | PlusMultExpr
+;
+
+PlusMultExpr:
+	'+'? term1=MultExpr (('+' | '-') term2=MultExpr)*
+;
+
+MinusMultExpr:
+	'-' term1=MultExpr(('+' | '-') term2=MultExpr)*
+;
+
+MultExpr:
+	term1=Atomic (('*' | '/') term2=Atomic)*
+;
+
+Atomic:
+	value=RndI | value=INT | '(' value=AExpr ')'
+;
+
+RndI:
+	'random' ('(' lower=AExpr ',' upper=AExpr ')')?
+;
+
+Event:
+	'obstacle' | 'clap'
+;

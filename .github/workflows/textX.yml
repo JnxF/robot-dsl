@@ -32,4 +32,4 @@ jobs:
         python -m pip install textx   
     - name: Generate all robot models
       run: |
-        textx generate *.robot --target dot
+        textx check *.robot

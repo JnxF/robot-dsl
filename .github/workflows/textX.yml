@@ -29,8 +29,7 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Install textX
       run: |
-        sudo apt install graphviz
-        python -m pip install textx   
+        python -m pip install textX[cli]   
     - name: Generate all robot models
       run: |
         textx check *.robot

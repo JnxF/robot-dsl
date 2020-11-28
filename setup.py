@@ -1,6 +1,3 @@
-import codecs
-import os
-
 from setuptools import find_packages, setup
 
 PACKAGE_NAME = "robot"

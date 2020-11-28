@@ -1,4 +1,5 @@
 # robot-dsl
+![textX pipeline](https://github.com/JnxF/robot-dsl/workflows/textX%20pipeline/badge.svg)
 [![GitHub stars](https://img.shields.io/github/stars/JnxF/robot-dsl.svg)](https://GitHub.com/JnxF/robot-dsl/stargazers/)
 [![GitHub forks](https://img.shields.io/github/forks/JnxF/robot-dsl.svg)](https://GitHub.com/JnxF/robot-dsl/network/)
 [![GitHub repo size in bytes](https://img.shields.io/github/repo-size/JnxF/robot-dsl.svg)](https://github.com/JnxF/robot-dsl)
@@ -35,7 +36,8 @@ example_robot_model.name
 VS Code extension:
 * Install the [textX](https://github.com/textX/textX-LS) extension on VS Code.
 * Open the root folder of the repository: `code .`
-
+* Right click to `setup.py` and _Install textX project_.
+* Browse any `*.robot` file.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
